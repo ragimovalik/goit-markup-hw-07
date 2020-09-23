@@ -16,34 +16,38 @@
   </head>
   <body class="body">
     <!--Шапка - лого, навигация, контакты-->
-    <header class="page-header">
-      <div class="container header-flex">
-        <nav class="nav-flex">
-          <a class="logo-nav" href="WebStudio">Web<span>Studio</span></a>
-          <ul class="nav-links">
-            <li class="nav-links-items">
-              <a href="./index.html">Студия</a>
+    <header class="header">
+      <div class="container header--flexbox">
+        <nav class="nav">
+          <a class="mainlogo mainlogo__nav" href="WebStudio"
+            >Web<span class="mainlogo__nav--coloring">Studio</span></a
+          >
+          <ul class="nav__list">
+            <li class="nav__items">
+              <a class="nav__links" href="./index.html">Студия</a>
             </li>
-            <li class="nav-links-items">
-              <a class="current-page" href="./portfolio.html">Портфолио</a>
+            <li class="nav__items">
+              <a class="nav__links current-page" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="nav-links-items">
-              <a href="Контакты">Контакты</a>
+            <li class="nav__items">
+              <a class="nav__links" href="Контакты">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="nav-address">
-          <li>
-            <a class="nav-address-active" href="mailto:info@devstudio.com">
-              <svg class="icons-header" width="16" height="12">
+        <ul class="address">
+          <li class="address__item">
+            <a class="address__link" href="mailto:info@devstudio.com">
+              <svg class="address__icons" width="16" height="12">
                 <use href="./images/sprite.svg#email" />
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="nav-address-active" href="tel:+380961111111">
-              <svg class="icons-header" width="10" height="16">
+          <li class="address__item">
+            <a class="address__link" href="tel:+380961111111">
+              <svg class="address__icons" width="10" height="16">
                 <use href="./images/sprite.svg#phone" />
               </svg>
               +38 096 111 11 11</a
@@ -52,6 +56,7 @@
         </ul>
       </div>
     </header>
+
     <!-- Основная информация страницы -->
     <main>
       <div class="container projects">
@@ -280,7 +285,9 @@
       <div class="container footer-content-positioning">
         <!-- Footer Left Side -->
         <div class="footer-left-side">
-          <a class="logo-footer" href="WebStudio">Web<span>Studio</span></a>
+          <a class="mainlogo mainlogo__footer" href="WebStudio"
+            >Web<span class="mainlogo__footer--coloring">Studio</span></a
+          >
           <address class="footer-address">
             <p class="footer-address-elements">
               г. Киев, пр-т Леси Украинки, 26
@@ -296,51 +303,51 @@
         <!-- Footer Center -->
         <div class="footer-center">
           <b>присоединяйтесь</b>
-          <ul class="socials-list">
-            <li class="socials-item">
+          <ul class="socials__list">
+            <li class="socials__item">
               <a
-                class="socials-link"
+                class="socials__link"
                 href="https://www.instagram.com/"
                 aria-label="instagram"
                 target="_blank"
               >
-                <svg class="icons-social">
+                <svg class="socials__icon">
                   <use href="./images/sprite.svg#instagram" />
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
+            <li class="socials__item">
               <a
-                class="socials-link"
+                class="socials__link"
                 href="https://twitter.com/"
                 aria-label="twitter"
                 target="_blank"
               >
-                <svg class="icons-social">
+                <svg class="socials__icon">
                   <use href="./images/sprite.svg#twitter" />
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
+            <li class="socials__item">
               <a
-                class="socials-link"
+                class="socials__link"
                 href="https://www.facebook.com/"
                 aria-label="facebook"
                 target="_blank"
               >
-                <svg class="icons-social">
+                <svg class="socials__icon">
                   <use href="./images/sprite.svg#facebook" />
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
+            <li class="socials__item">
               <a
-                class="socials-link"
+                class="socials__link"
                 href="https://www.linkedin.com/"
                 aria-label="linkedin"
                 target="_blank"
               >
-                <svg class="icons-social">
+                <svg class="socials__icon">
                   <use href="./images/sprite.svg#linkedin" />
                 </svg>
               </a>
