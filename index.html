@@ -473,26 +473,24 @@
     </main>
     <!--Подвал-->
     <footer class="footer">
-      <div class="container footer-content-positioning">
+      <div class="container footer__content--positioning">
         <!-- Footer Left Side -->
-        <div class="footer-left-side">
+        <div class="footer__left">
           <a class="mainlogo mainlogo__footer" href="WebStudio"
             >Web<span class="mainlogo__footer--coloring">Studio</span></a
           >
-          <address class="footer-address">
-            <p class="footer-address-elements">
-              г. Киев, пр-т Леси Украинки, 26
-            </p>
-            <div class="footer-address-elements">
+          <address class="contacts">
+            <p class="contacts__item">г. Киев, пр-т Леси Украинки, 26</p>
+            <div class="contacts__item">
               <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </div>
-            <div class="footer-address-elements">
+            <div class="contacts__item">
               <a href="tel:+380961111111">+38 096 111 11 11</a>
             </div>
           </address>
         </div>
         <!-- Footer Center -->
-        <div class="footer-center">
+        <div class="footer__center">
           <b>присоединяйтесь</b>
           <ul class="socials__list">
             <li class="socials__item">
@@ -546,18 +544,18 @@
           </ul>
         </div>
         <!-- Footer Right Side -->
-        <form class="footer-right-side">
-          <b class="footer-subscribing-title">Подпишитесь на рассылку</b>
+        <form class="footer__right subscribing">
+          <b class="subscribing__title">Подпишитесь на рассылку</b>
 
-          <div class="footer-subscribing-input-wrapper">
+          <div class="subscribing__content">
             <input
-              class="footer-subscribing-input"
+              class="subscribing__input"
               type="email"
               name="subscribing"
               id="subscribing"
               placeholder="E-mail"
             />
-            <button class="button footer-subscribing-button" type="submit">
+            <button class="button subscribing__button" type="submit">
               Подписаться
               <svg width="24" height="24">
                 <use href="./images/sprite.svg#sending" />
@@ -573,63 +571,62 @@
         <button type="submit" class="modal--closing" data-modal-close></button>
 
         <!-- Modal Window - FORM -->
-        <form class="modal-form">
-          <b class="modal-form-title">
-            Оставьте свои данные, мы вам перезвоним
-          </b>
+        <form class="form">
+          <b class="form__title"> Оставьте свои данные, мы вам перезвоним </b>
 
-          <label class="modal-form-label" for="name">Имя</label>
-          <div class="modal-form-input-wrapper">
-            <input class="modal-form-input" type="text" name="name" id="name" />
-            <svg class="modal-icon" width="12" height="12">
+          <label class="form__label" for="name">Имя</label>
+          <div class="input">
+            <input
+              class="input__description"
+              type="text"
+              name="name"
+              id="name"
+            />
+            <svg class="input__icon" width="12" height="12">
               <use href="./images/sprite.svg#modal-name" />
             </svg>
           </div>
 
-          <label class="modal-form-label" for="tel">Телефон</label>
-          <div class="modal-form-input-wrapper">
-            <input class="modal-form-input" type="tel" name="tel" id="tel" />
-            <svg class="modal-icon" width="13" height="13">
+          <label class="form__label" for="tel">Телефон</label>
+          <div class="input">
+            <input class="input__description" type="tel" name="tel" id="tel" />
+            <svg class="input__icon" width="13" height="13">
               <use href="./images/sprite.svg#modal-phone" />
             </svg>
           </div>
 
-          <label class="modal-form-label" for="email">Почта</label>
-          <div class="modal-form-input-wrapper">
+          <label class="form__label" for="email">Почта</label>
+          <div class="input">
             <input
-              class="modal-form-input"
+              class="input__description"
               type="email"
               name="email"
               id="email"
             />
-            <svg class="modal-icon" width="15" height="12">
+            <svg class="input__icon" width="15" height="12">
               <use href="./images/sprite.svg#modal-email" />
             </svg>
           </div>
 
-          <label class="modal-form-label"
+          <label class="form__label"
             >Комментарий
             <textarea
-              class="modal-form-comment"
+              class="form__comments"
               name="comment"
               rows="6"
               placeholder="Введите текст"
             ></textarea>
           </label>
 
-          <label class="modal-form-checkbox">
-            <input
-              class="modal-form-checkbox-hidden"
-              type="checkbox"
-              name="checkbox"
-            />
-            <span class="modal-form-checkbox-custom">
+          <label class="form__checkbox checkbox">
+            <input class="checkbox__hidden" type="checkbox" name="checkbox" />
+            <span class="checkbox__custom">
               Соглашаюсь с рассылкой и принимаю
               <a href="">Условия договора</a></span
             >
           </label>
 
-          <button type="submit" class="button">Отправить</button>
+          <button class="form__button button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
