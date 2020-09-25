@@ -1,29 +1,18 @@
-/* Цвет фона - основной #ffffff */
-/* Цвет фона - второстепенный и подвал - #2F303A */
-/* Цвет фона - кнопка - #2196F3 */
-/* Цвет фона - секция Наша Команда - #F5F4FA */
-/* Цвет лого - #2196F3 */
-/* Цвет текста - заголовки и навигация - #212121*/
-/* Цвет текста - параграф, телефон и почта - #757575 */
-/* Цвет текста - навигация при активности и кнопки - #2196F3 */
-/* Цвет текста - основные услуги и адрес в подвале - #ffffff */
-/* Цвет текста - подвал - телефон и почта - 255, 255, 255, 0.6 */
-/* Цвет иконок - соц.сети и логотипы клиентов #afb1b8 */
-
 :root {
   --bgc-primary: #ffffff;
-  --bgc-secondary: #2f303a;
+  --bgc-secondary: #f5f4fa;
+  --bgc-footer: #2f303a;
   --bgc-button: #2196f3;
-  --bgc-our-team: #f5f4fa;
-  --txt-nav-n-headings: #212121;
-  --txt-paragraphs: #757575;
-  --txt-inactive: #2196f3;
-  --txt-main-inactive-foot-address: #ffffff;
-  --txt-footer-phone-n-mail: rgba(255, 255, 255, 0.6);
-  --icons-socials-n-customers: #afb1b8;
+
+  --txt-black: #212121;
+  --txt-grey: #757575;
+  --txt-accent: #2196f3;
+  --txt-white: #ffffff;
+  --txt-footer-contacts: rgba(255, 255, 255, 0.6);
+  --icons-customers: #afb1b8;
 
   --transition-duration: 250ms;
-  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-t-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .body {
@@ -48,7 +37,7 @@ img {
 }
 
 p {
-  color: var(--txt-paragraphs);
+  color: var(--txt-grey);
 }
 
 a {
@@ -118,9 +107,9 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition: color var(--transition-duration) var(--transition-timing-function);
+  transition: color var(--transition-duration) var(--transition-t-function);
 
-  color: var(--txt-nav-n-headings);
+  color: var(--txt-black);
 
   font-weight: 500;
   font-size: 14px;
@@ -130,7 +119,7 @@ ul {
 
 .nav__links:hover,
 .nav__links:focus {
-  color: var(--txt-inactive);
+  color: var(--txt-accent);
 }
 
 .nav__items {
@@ -171,9 +160,9 @@ ul {
   display: flex;
   align-items: center;
 
-  transition: color var(--transition-duration) var(--transition-timing-function);
+  transition: color var(--transition-duration) var(--transition-t-function);
 
-  color: var(--txt-paragraphs);
+  color: var(--txt-grey);
 
   font-weight: 500;
   font-size: 14px;
@@ -183,12 +172,12 @@ ul {
 
 .address__link:hover,
 .address__link:focus {
-  color: var(--txt-inactive);
+  color: var(--txt-accent);
 }
 
 .address__link:hover .address__icons,
 .address__link:focus .address__icons {
-  fill: var(--txt-inactive);
+  fill: var(--txt-accent);
 }
 
 .address__item:first-child {
@@ -232,7 +221,7 @@ ul {
   margin-top: 0;
   margin-bottom: 40px;
 
-  color: var(--txt-main-inactive-foot-address);
+  color: var(--txt-white);
 
   font-weight: 900;
   font-size: 44px;
@@ -250,11 +239,11 @@ ul {
   border-radius: 4px;
 
   background-color: var(--bgc-button);
-  color: var(--txt-main-inactive-foot-address);
+  color: var(--txt-white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: border var(--transition-duration)
-    var(--transition-timing-function);
+    var(--transition-t-function);
 
   font-weight: 700;
   font-size: 16px;
@@ -300,7 +289,7 @@ ul {
   height: 120px;
   outline: none;
 
-  background: var(--bgc-our-team);
+  background: var(--bgc-secondary);
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
@@ -336,7 +325,7 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
 
-  color: var(--txt-nav-n-headings);
+  color: var(--txt-black);
 }
 
 .advantages__text {
@@ -363,7 +352,7 @@ ul {
   font-size: 36px;
   line-height: 1.17;
 
-  color: var(--txt-nav-n-headings);
+  color: var(--txt-black);
 }
 
 .our-work__list {
@@ -403,7 +392,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--txt-main-inactive-foot-address);
+  color: var(--txt-white);
   background: rgba(47, 48, 58, 0.8);
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -414,7 +403,7 @@ ul {
 .our-team {
   padding: 94px 0;
 
-  background-color: var(--bgc-our-team);
+  background-color: var(--bgc-secondary);
 }
 
 .our-team__list {
@@ -451,7 +440,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  color: var(--txt-nav-n-headings);
+  color: var(--txt-black);
 }
 
 .person__position {
@@ -488,7 +477,7 @@ ul {
   border-radius: 50%;
 
   transition: background-color var(--transition-duration)
-    var(--transition-timing-function);
+    var(--transition-t-function);
 
   background-color: var(--bgc-primary);
 }
@@ -504,7 +493,7 @@ ul {
 }
 
 .socials__icon {
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+  transition: fill var(--transition-duration) var(--transition-t-function);
 
   fill: #afb1b8;
   width: 20px;
@@ -536,18 +525,18 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--icons-socials-n-customers);
+  border: 1px solid var(--icons-customers);
   border-radius: 4px;
   width: 170px;
   height: 90px;
 
   transition: border var(--transition-duration)
-    var(--transition-timing-function);
+    var(--transition-t-function);
 }
 
 .customers__link:hover,
 .customers__link:focus {
-  border: 1px solid var(--txt-inactive);
+  border: 1px solid var(--txt-accent);
 }
 
 .customers__link:hover .customers__icon,
@@ -560,15 +549,15 @@ ul {
 }
 
 .customers__icon {
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+  transition: fill var(--transition-duration) var(--transition-t-function);
 
-  fill: var(--icons-socials-n-customers);
+  fill: var(--icons-customers);
 }
 
 /* Footer */
 
 .footer {
-  background-color: var(--bgc-secondary);
+  background-color: var(--bgc-footer);
 }
 
 .footer__content--positioning {
@@ -580,7 +569,7 @@ ul {
 .contacts {
   display: block;
 
-  color: var(--txt-main-inactive-foot-address);
+  color: var(--txt-white);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -597,13 +586,13 @@ ul {
 }
 
 .contacts a {
-  color: var(--txt-footer-phone-n-mail);
-  transition: color var(--transition-duration) var(--transition-timing-function);
+  color: var(--txt-footer-contacts);
+  transition: color var(--transition-duration) var(--transition-t-function);
 }
 
 .contacts a:hover,
 .contacts a:focus {
-  color: var(--txt-inactive);
+  color: var(--txt-accent);
 }
 
 .contacts__item:not(:last-child) {
@@ -624,7 +613,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--txt-main-inactive-foot-address);
+  color: var(--txt-white);
 }
 
 .footer__center .socials__link {
@@ -656,7 +645,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--txt-main-inactive-foot-address);
+  color: var(--txt-white);
 }
 
 .subscribing__content {
@@ -680,10 +669,10 @@ ul {
   padding: 0 0 0 16px;
 
   transition: border var(--transition-duration)
-    var(--transition-timing-function);
+    var(--transition-t-function);
 
   background-color: inherit;
-  color: var(--txt-main-inactive-foot-address);
+  color: var(--txt-white);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -728,10 +717,10 @@ ul {
   border: none;
   outline-color: transparent;
 
-  transition: var(--transition-duration) var(--transition-timing-function);
+  transition: var(--transition-duration) var(--transition-t-function);
 
-  background-color: var(--bgc-our-team);
-  color: var(--txt-nav-n-headings);
+  background-color: var(--bgc-secondary);
+  color: var(--txt-black);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -745,7 +734,7 @@ ul {
   outline-color: transparent;
 
   background-color: var(--bgc-button);
-  color: var(--txt-main-inactive-foot-address);
+  color: var(--txt-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 
@@ -766,7 +755,7 @@ ul {
   list-style-type: none;
 
   transition: box-shadow var(--transition-duration)
-    var(--transition-timing-function);
+    var(--transition-t-function);
 }
 
 .project:not(:nth-child(3n)) {
@@ -795,7 +784,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  color: var(--txt-nav-n-headings);
+  color: var(--txt-black);
 }
 
 .project__type {
@@ -843,8 +832,8 @@ ul {
   opacity: 0;
 
   transition: transform var(--transition-duration)
-      var(--transition-timing-function),
-    opacity var(--transition-duration) var(--transition-timing-function);
+      var(--transition-t-function),
+    opacity var(--transition-duration) var(--transition-t-function);
 }
 
 .overlay__text {
@@ -922,7 +911,7 @@ ul {
   background-repeat: no-repeat;
 
   transition: background-image var(--transition-duration)
-    var(--transition-timing-function);
+    var(--transition-t-function);
 }
 
 .modal--closing:hover {
@@ -931,7 +920,7 @@ ul {
 
 .modal--closing:focus {
   background-image: url(../images/svg/close-hover.svg);
-  border: 1px solid var(--txt-inactive);
+  border: 1px solid var(--txt-accent);
 }
 
 .form {
@@ -948,7 +937,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--txt-nav-n-headings);
+  color: var(--txt-black);
 }
 
 .form__label {
@@ -958,7 +947,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  color: var(--txt-paragraphs);
+  color: var(--txt-grey);
 }
 
 .input {
@@ -976,13 +965,13 @@ ul {
   border-radius: 4px;
   outline: transparent;
 
-  transition: var(--transition-duration) var(--transition-timing-function);
+  transition: var(--transition-duration) var(--transition-t-function);
 }
 
 .input__description:focus,
 .input__description:hover {
   border: 1px solid #2196f3;
-  caret-color: var(--txt-inactive);
+  caret-color: var(--txt-accent);
   outline: transparent;
 }
 
@@ -993,12 +982,12 @@ ul {
   left: 15px;
   transform: translateY(-50%);
 
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+  transition: fill var(--transition-duration) var(--transition-t-function);
 }
 
 .input__description:focus + .input__icon,
 .input__description:hover + .input__icon {
-  fill: var(--txt-inactive);
+  fill: var(--txt-accent);
 }
 
 .form__comments {
@@ -1026,7 +1015,7 @@ ul {
   border: 1px solid #2196f3;
   box-sizing: border-box;
   border-radius: 4px;
-  caret-color: var(--txt-inactive);
+  caret-color: var(--txt-accent);
 
   outline: transparent;
 }
@@ -1040,7 +1029,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: var(--txt-paragraphs);
+  color: var(--txt-grey);
 }
 
 .checkbox {
@@ -1071,7 +1060,7 @@ ul {
   background-size: contain;
   background-repeat: no-repeat;
 
-  transition: var(--transition-duration) var(--transition-timing-function);
+  transition: var(--transition-duration) var(--transition-t-function);
 }
 
 .checkbox__hidden:checked + .checkbox__custom::before {
@@ -1082,12 +1071,12 @@ ul {
 }
 
 .checkbox__hidden:focus + .checkbox__custom::before {
-  border: 1px solid var(--txt-inactive);
+  border: 1px solid var(--txt-accent);
 }
 
 .checkbox a {
   text-decoration: underline;
-  color: var(--txt-inactive);
+  color: var(--txt-accent);
 }
 
 .checkbox a:focus {
@@ -1101,5 +1090,5 @@ ul {
 }
 
 .form__button:focus {
-  outline: 1px solid var(--txt-inactive);
+  outline: 1px solid var(--txt-accent);
 }
