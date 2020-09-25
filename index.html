@@ -107,34 +107,34 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="our-work__list">
-            <li class="list__item">
-              <a class="list__links" href="box-1"
-                ><img
+            <li class="our-work__item">
+              <a class="our-work__link" href="box-1"
+                ><img 
                   src="./images/1-1.jpg"
                   alt="Десктопные приложения"
                   width="370"
                 />
-                <h3 class="list__title">Десктопные приложения</h3>
+                <h3 class="our-work__description">Десктопные приложения</h3>
               </a>
             </li>
-            <li class="list__item">
-              <a class="list__links" href="box-2"
+            <li class="our-work__item">
+              <a class="our-work__link" href="box-2"
                 ><img
                   src="./images/1-2.jpg"
                   alt="Мобильные приложения"
                   width="370"
                 />
-                <h3 class="list__title">Мобильные приложения</h3>
+                <h3 class="our-work__description">Мобильные приложения</h3>
               </a>
             </li>
-            <li class="list__item">
-              <a class="list__links" href="box-3"
+            <li class="our-work__item">
+              <a class="our-work__link" href="box-3"
                 ><img
                   src="./images/1-3.jpg"
                   alt="Дизайнерские решения"
                   width="370"
                 />
-                <h3 class="list__title">Дизайнерские решения</h3>
+                <h3 class="our-work__description">Дизайнерские решения</h3>
               </a>
             </li>
           </ul>
@@ -155,7 +155,7 @@
               <div class="person__content">
                 <h3 class="person__name">Игорь Демьяненко</h3>
                 <p class="person__position">Product Designer</p>
-                <ul class="person__socials socials__list">
+                <ul class="socials">
                   <li class="socials__item">
                     <a
                       class="socials__link"
@@ -217,7 +217,7 @@
               <div class="person__content">
                 <h3 class="person__name">Ольга Репина</h3>
                 <p class="person__position">Frontend Developer</p>
-                <ul class="socials__list">
+                <ul class="socials">
                   <li class="socials__item">
                     <a
                       class="socials__link"
@@ -279,7 +279,7 @@
               <div class="person__content">
                 <h3 class="person__name">Николай Тарасов</h3>
                 <p class="person__position">Marketing</p>
-                <ul class="socials__list">
+                <ul class="socials">
                   <li class="socials__item">
                     <a
                       class="socials__link"
@@ -341,7 +341,7 @@
               <div class="person__content">
                 <h3 class="person__name">Михаил Ермаков</h3>
                 <p class="person__position">UI Designer</p>
-                <ul class="socials__list">
+                <ul class="socials">
                   <li class="socials__item">
                     <a
                       class="socials__link"
@@ -480,19 +480,19 @@
             >Web<span class="mainlogo__footer--coloring">Studio</span></a
           >
           <address class="contacts">
-            <p class="contacts__item">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="contacts__item contacts__text">г. Киев, пр-т Леси Украинки, 26</p>
             <div class="contacts__item">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </div>
             <div class="contacts__item">
-              <a href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
             </div>
           </address>
         </div>
         <!-- Footer Center -->
         <div class="footer__center">
-          <b>присоединяйтесь</b>
-          <ul class="socials__list">
+          <b class="footer__join">присоединяйтесь</b>
+          <ul class="socials">
             <li class="socials__item">
               <a
                 class="socials__link"
@@ -544,7 +544,7 @@
           </ul>
         </div>
         <!-- Footer Right Side -->
-        <form class="footer__right subscribing">
+        <form class="subscribing">
           <b class="subscribing__title">Подпишитесь на рассылку</b>
 
           <div class="subscribing__content">
@@ -566,7 +566,7 @@
       </div>
     </footer>
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--hidden" data-modal>
       <div class="modal">
         <button type="submit" class="modal--closing" data-modal-close></button>
 
@@ -622,7 +622,7 @@
             <input class="checkbox__hidden" type="checkbox" name="checkbox" />
             <span class="checkbox__custom">
               Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a></span
+              <a class="checkbox__agreement" href="">Условия договора</a></span
             >
           </label>
 

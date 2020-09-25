@@ -1,0 +1,25 @@
+.mainlogo {
+  display: block;
+  color: #2196f3;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &__nav {
+    margin-right: 93px;
+  }
+
+  &__nav--coloring {
+    color: black;
+  }
+
+  &__footer {
+    margin-bottom: 20px;
+  }
+
+  &__footer--coloring {
+    color: #ffffff;
+  }
+}
