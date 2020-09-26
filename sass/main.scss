@@ -1,14 +1,19 @@
 @import "./utils/variables";
+@import "./base/normalize";
 @import "./base/commons";
+@import "./base/fonts";
 @import "./components/button";
 @import "./components/logo";
 @import "./components/socials";
 @import "./components/current-page";
+@import "./components/person";
 @import "./components/contacts";
 @import "./components/subscribing";
 @import "./components/modal";
 @import "./components/form";
+@import "./components/overlay";
 @import "./layouts/header";
+@import "./layouts/nav";
 @import "./layouts/main-activity";
 @import "./layouts/advantages";
 @import "./layouts/our-work";
@@ -17,8 +22,3 @@
 @import "./layouts/footer";
 @import "./layouts/filter";
 @import "./layouts/projects";
-
-a {
-  text-decoration: none;
-  outline: none;
-}

@@ -12,24 +12,24 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/main-banner-image.jpg);
-}
 
-.main-activity__content {
-  padding: 200px 0;
-  max-width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  &__content {
+    padding: 200px 0;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.main-activity__title {
-  margin-top: 0;
-  margin-bottom: 40px;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 40px;
 
-  color: $txt-white;
+    color: $txt-white;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }

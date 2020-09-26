@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Портфолио</title>
-    <link
+    <!-- <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        /> -->
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />
+    /> -->
   </head>
   <body class="body">
     <!--Шапка - лого, навигация, контакты-->
@@ -81,7 +81,7 @@
         <!-- Список проектов с картинками -->
         <ul class="projects">
           <li class="project">
-            <a href="">
+            <a class="project__link" href="">
               <div class="project__layer">
                 <img
                   src="./images/portfolio-page-1.jpg"
@@ -104,7 +104,7 @@
             </a>
           </li>
           <li class="project">
-            <a href="">
+            <a class="project__link" href="">
               <div class="project__layer">
                 <img
                   src="./images/portfolio-page-2.jpg"
@@ -127,7 +127,7 @@
             </a>
           </li>
           <li class="project">
-            <a href="">
+            <a class="project__link" href="">
               <div class="project__layer">
                 <img
                   src="./images/portfolio-page-3.jpg"
@@ -150,7 +150,7 @@
             </a>
           </li>
           <li class="project">
-            <a href="">
+            <a class="project__link" href="">
               <div class="project__layer">
                 <img
                   src="./images/portfolio-page-4.jpg"
@@ -173,7 +173,7 @@
             </a>
           </li>
           <li class="project">
-            <a href="">
+            <a class="project__link" href="">
               <div class="project__layer">
                 <img
                   src="./images/portfolio-page-5.jpg"
@@ -196,7 +196,7 @@
             </a>
           </li>
           <li class="project">
-            <a href="">
+            <a class="project__link" href="">
               <div class="project__layer">
                 <img
                   src="./images/portfolio-page-6.jpg"
@@ -219,7 +219,7 @@
             </a>
           </li>
           <li class="project">
-            <a href="">
+            <a class="project__link" href="">
               <div class="project__layer">
                 <img
                   src="./images/portfolio-page-7.jpg"
@@ -242,7 +242,7 @@
             </a>
           </li>
           <li class="project">
-            <a href="">
+            <a class="project__link" href="">
               <div class="project__layer">
                 <img
                   src="./images/portfolio-page-8.jpg"
@@ -265,7 +265,7 @@
             </a>
           </li>
           <li class="project">
-            <a href="">
+            <a class="project__link" href="">
               <div class="project__layer">
                 <img
                   src="./images/portfolio-page-9.jpg"
@@ -299,12 +299,18 @@
             >Web<span class="mainlogo__footer--coloring">Studio</span></a
           >
           <address class="contacts">
-            <p class="contacts__item contacts__tex">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="contacts__item contacts__tex">
+              г. Киев, пр-т Леси Украинки, 26
+            </p>
             <div class="contacts__item">
-              <a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="contacts__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </div>
             <div class="contacts__item">
-              <a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="contacts__link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
             </div>
           </address>
         </div>

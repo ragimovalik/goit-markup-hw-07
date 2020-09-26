@@ -59,11 +59,13 @@
     background-size: contain;
     background-repeat: no-repeat;
 
-    transition: background-image $transition-duration $transition-t-function;
+    transition: background-image $transition-duration $transition-t-function,
+      transform $transition-duration $transition-t-function;
   }
 
   &--closing:hover {
     background-image: url(../images/svg/close-hover.svg);
+    transform: rotate(180deg);
   }
 
   &--closing:focus {
