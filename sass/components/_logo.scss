@@ -1,8 +1,7 @@
 .mainlogo {
   display: block;
-  color: #2196f3;
+  color: $txt-accent;
   font-family: Raleway, sans-serif;
-  font-style: normal;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -12,7 +11,7 @@
   }
 
   &__nav--coloring {
-    color: black;
+    color: $txt-black;
   }
 
   &__footer {
@@ -20,6 +19,6 @@
   }
 
   &__footer--coloring {
-    color: #ffffff;
+    color: $txt-white;
   }
 }
