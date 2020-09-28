@@ -46,7 +46,7 @@
 
   &__comments:focus,
   &__comments:hover {
-    border: 1px solid #2196f3;
+    border: 1px solid $bgc-button;
     box-sizing: border-box;
     border-radius: 4px;
     caret-color: $txt-accent;
@@ -96,7 +96,7 @@
 
   &__description:focus,
   &__description:hover {
-    border: 1px solid #2196f3;
+    border: 1px solid $bgc-button;
     caret-color: $txt-accent;
     outline: transparent;
   }

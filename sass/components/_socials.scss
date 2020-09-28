@@ -36,7 +36,7 @@
   &__icon {
     transition: fill $transition-duration $transition-t-function;
 
-    fill: #afb1b8;
+    fill: $icons-customers;
     width: 20px;
     height: 20px;
   }
