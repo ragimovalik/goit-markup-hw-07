@@ -55,8 +55,8 @@
     margin-top: 0;
     margin-bottom: 10px;
 
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: $font-bold;
+    font-size: $fsz-advantages-content;
     line-height: 1.14;
     text-transform: uppercase;
 
@@ -67,8 +67,8 @@
     margin-top: 0;
     margin-bottom: 0;
 
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: $font-normal;
+    font-size: $fsz-advantages-content;
     line-height: 1.71;
     color: $txt-grey;
   }

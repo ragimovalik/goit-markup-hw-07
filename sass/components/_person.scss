@@ -20,8 +20,8 @@
   &__name {
     margin: 0 0 10px 0;
 
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: $font-medium;
+    font-size: $fsz-person-content;
     line-height: 1.19;
     color: $txt-black;
   }
@@ -29,8 +29,8 @@
   &__position {
     margin: 0 0 16px 0;
 
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: $font-normal;
+    font-size: $fsz-person-content;
     line-height: 1.19;
     color: $txt-grey;
   }

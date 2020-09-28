@@ -17,22 +17,30 @@ $transition-duration: 250ms;
 $transition-t-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 // Fonts
-// $font-family: "Roboto", sans-serif;
-// $font-family-logo: Raleway, sans-serif;
-
-// $font-size-logo: 26px;
-
-
-// $font-size: 
-
+$font-family: "Roboto", sans-serif;
+$font-family-logo: Raleway, sans-serif;
 
 // Fonts: Weights
-// $font-light: 300;
-// $font-normal: 400;
-// $font-bold: 700;
+
+$font-normal: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-extra-bold: 900;
 
 // Fonts: Sizes
-// $font-sm: 90%;
-// $font-sm-x: 80%;
-// $font-lg: 110%;
-// $font-lg-x: 120%;
+
+$fsz-mainlogo: 26px;
+$fsz-main-activity: 44px;
+$fsz-section-title: 36px;
+$fsz-form-title: 20px;
+$fsz-overlay: 18px;
+$fsz-projects-title: 18px;
+$fsz-projects-type: 16px;
+$fsz-button: 16px;
+$fsz-person-content: 16px;
+$fsz-header: 14px;
+$fsz-footer: 14px;
+$fsz-checkbox: 14px;
+$fsz-advantages-content: 14px;
+$fsz-our-work: 14px;
+$fsz-form-content: 12px;

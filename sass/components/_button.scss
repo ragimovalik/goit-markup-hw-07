@@ -12,8 +12,8 @@
 
   transition: border $transition-duration $transition-t-function;
 
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: $font-bold;
+  font-size: $fsz-button;
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;

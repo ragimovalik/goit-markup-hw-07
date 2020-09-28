@@ -1,6 +1,6 @@
 .body {
   background-color: $bgc-primary;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family;
   letter-spacing: 0.03em;
 }
 
@@ -28,8 +28,8 @@ a {
   margin-bottom: 50px;
 
   text-align: center;
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: $font-bold;
+  font-size: $fsz-section-title;
   line-height: 1.17;
 
   color: $txt-black;
